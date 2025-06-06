@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poller+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Rammetto+One&family=Viga&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  
+    }
+  
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #d4fc79 10%, #96e6a1 100%);
+}
+
+body::before,
+body::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+body::before{
+    clip-path: circle(30% at left 20%);
+    background: linear-gradient(135deg,#96e6a1  10%,#d4fc79  100%);    
+}
+
+body::after{
+    clip-path: circle(25% at right 80%);
+    background: linear-gradient(135deg,#96e6a1  10%,#d4fc79  100%);    
+}
+header{
+    height: 85vh;
+    width: 90%;
+    background:  rgba(252, 252, 252, 0.1);
+    backdrop-filter: blur(5px);
+    margin: auto;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(252, 252, 252, 0.5);
+    border-left: 1px solid rgba(252, 252, 252, 0.5);
+
+}
+header .navbar{
+    width: 100%;
+    display: flex;
+    padding: 35px 50px;
+    justify-content: space-between;
+}
+header .navbar .logo a{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+}
+header .navbar .menu{
+    display: flex;
+}
+.navbar .menu li{
+    list-style: none;
+    margin: 0 6px;
+    
+}
+.navbar .menu a{
+    text-decoration: none;
+    color: #000;
+    font-size: 17px;
+    font-weight: 500;
+}
+.navbar .menu a:hover{
+    color: #f2f2f2;
+}
+.navbar .buttons input{
+    color: #f2f2f2;
+    outline: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 6px 12px;
+    margin:  0 8px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background:  linear-gradient(135deg,#96e6a1  10%,#d4fc79  100%);
+}
+.navbar .buttons input:hover{
+    transform: scale(0.97);
+}
+.text-content{
+    width: 40%;
+    margin: 100px 0 0 50px;
+
+}
+.text-content h2{
+    font-size: 27 px;
+    font-weight: 600;
+}
+.text-content p{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.mail-icon{
+    text-align: center;
+    font-size: 60px;
+}
